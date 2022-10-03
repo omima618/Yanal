@@ -1,0 +1,139 @@
+@media (max-width: 1200px) {
+    .lg-show {
+        display: block !important;
+    }
+    .lg-flex-col {
+        flex-direction: column;
+    }
+    .categories .text-wrapper {
+        width: 60% !important;
+    }
+    .lg-nav-style {
+        display: none;
+        position: absolute;
+        min-width: 250px;
+        width: fit-content;
+        right: 7%;
+        top: 55%;
+        z-index: 20;
+        padding: 20px 40px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 0 #33333342;
+    }
+    .lg-nav-style ul,
+    .lg-nav-style .controls {
+        align-items: flex-start;
+    }
+    .lg-nav-style ul li {
+        margin: 0 0 20px;
+    }
+    .lg-nav-style .controls img:nth-child(2) {
+        margin-right: 15px;
+    }
+    header .controls .basket::before {
+        right: 10px;
+    }
+}
+@media (max-width: 991px) {
+    html {
+        font-size: 15px;
+    }
+    .md-flex-wrap {
+        flex-wrap: wrap;
+    }
+    .md-half-width {
+        width: 48%;
+    }
+    .md-full-width {
+        width: 100% !important;
+    }
+    .md-flex-col {
+        flex-direction: column;
+    }
+    .md-flex-col-rev {
+        flex-direction: column-reverse;
+    }
+    .md-mb-30 {
+        margin-bottom: 30px;
+    }
+    .md-mb-50 {
+        margin-bottom: 50px;
+    }
+    .categories .cup-decor {
+        display: none;
+    }
+    .categories .text-wrapper {
+        width: 100% !important;
+        padding-bottom: 50px;
+    }
+    .discount .card {
+        width: 60%;
+    }
+}
+@media (max-width: 767px) {
+    :root {
+        --section-mb: 6rem;
+    }
+    .special-heading:not(h1.special-heading) {
+        margin-left: 0;
+        text-align: left;
+    }
+    .special-heading::after {
+        content: '';
+    }
+    html {
+        font-size: 14px;
+    }
+    .sm-flex-wrap {
+        flex-wrap: wrap;
+    }
+    .sm-full-width {
+        width: 100% !important;
+    }
+    .sm-flex-col-rev {
+        flex-direction: column-reverse;
+    }
+    .testimonails {
+        margin-bottom: 9rem;
+    }
+    .discount {
+        top: -15%;
+    }
+    .discount .card {
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+    .xsm-flex-col {
+        flex-direction: column;
+    }
+    .hero .buttons button {
+        padding: 10px 20px;
+    }
+    .app .text-wrapper .store img {
+        width: 100px;
+        height: 35px;
+    }
+    .testimonails .feedback-header .client-det {
+        display: block;
+    }
+    .testimonails .feedback-text .client-det {
+        display: none;
+    }
+    .categories .text-wrapper {
+        padding: 10px 20px 30px;
+    }
+    .discount {
+        top: -10%;
+    }
+    .discount .card {
+        width: 85%;
+    }
+    .discount .card div button {
+        padding: 12px;
+    }
+}

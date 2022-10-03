@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --red: #ea0000;
+    --bg-color: #eb00000f;
+    --dark: #2a333e;
+    --gray: #2a333e80;
+    --light: #f9f9f9;
+    --white: #fff;
+    --fs-xsm: 0.72rem; /* 11.5px  */
+    --fs-xxsm: 0.8rem; /* 12.8px */
+    --fs-sm: 0.875rem; /* 14px */
+    --fs-normal: 1rem; /* 16px */
+    --fs-md: 1.25rem; /* 20px */
+    --fs-lg: 1.6rem; /* 25px */
+    --section-mb: 9.375rem; /* 120px*/
+    --font-family-1: 'Abhaya Libre', serif;
+    --font-family-2: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: 4px;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--dark);
+    border-radius: 20px;
+}
+body {
+    color: var(--dark);
+    font-family: var(--font-family-2);
+    font-weight: 500;
+    background-repeat: no-repeat;
+}
+h1,
+h2 {
+    font-family: var(--font-family-1);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.sec-mb {
+    margin-bottom: var(--section-mb);
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1%;
+}
+.half-width {
+    width: 48%;
+}
+.special-heading {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 6rem;
+    font-size: 4.7rem;
+    letter-spacing: -0.45rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--red);
+}
+.special-heading::before {
+    content: 'Popular Menu';
+    width: 100%;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    font-family: var(--font-family-2);
+    font-size: var(--fs-md);
+    letter-spacing: 0;
+    color: var(--dark);
+    transform: translateX(-50%);
+}
+.special-heading::after {
+    content: url(../images/shape.png);
+    position: absolute;
+    bottom: -2.5rem;
+    left: 4rem;
+}
+.btn {
+    display: block;
+    width: fit-content;
+    padding: 15px 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-family: var(--font-family-2);
+    font-size: var(--fs-xsm);
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.red-btn {
+    background-color: var(--red);
+    box-shadow: -10px 20px 10px 0 rgba(255, 0, 0, 0.1);
+}
+.dark-btn {
+    background-color: var(--dark);
+    box-shadow: -10px 20px 10px 0 rgba(42, 51, 62, 0.1);
+}
+.d-flex,
+.d-flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-flex-wrap {
+    flex-wrap: wrap;
+}
